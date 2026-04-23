@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+    background-size: 400% 400%;
+    animation: gradientRGB 8s ease infinite;
+}
+
+@keyframes gradientRGB {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    animation: giro360 infinite 5s linear reverse;
+}
+
+@keyframes giro360 {
+    0% {
+        transform: rotate(0deg);
+        font-size: 5rem;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        font-size: 10rem;
+    }
+}
